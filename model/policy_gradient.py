@@ -1,9 +1,9 @@
 import torch
 from torch.distributions import Categorical
 from torch import nn
-from base_rl import Policy
+from model.base_rl import Policy
 import numpy as np
-import gym
+import gymnasium as gym
 
 class MLP(nn.Module):
     def __init__(self, input_size, hidden_layers, output_size) -> None:
